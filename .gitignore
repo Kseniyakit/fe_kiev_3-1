@@ -1,3 +1,22 @@
+# User-specific stuff:
+.idea/
+.idea/**/modules.xml
+.idea/**/kitayeva_k-dz_6.iml
+.idea/**/workspace.xml
+.idea/**/part1.iml
+.idea/**/part2.iml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+# Sensitive or high-churn files:
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+
 # Logs
 logs
 *.log

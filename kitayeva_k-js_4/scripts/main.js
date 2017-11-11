@@ -3,13 +3,13 @@
 function clickControl(control, action) {
     control.addEventListener('click', action);
 }
-function makeColorRed() {
+function markAsRed() {
     let paragraph = document.querySelectorAll('.task p');
     for (let i = 0; i < paragraph.length; i++) {
         paragraph[i].style.backgroundColor = '#ff2f2c';
     }
 }
-makeColorRed();
+markAsRed();
 
 //Task2
 function makeShadow() {
@@ -58,9 +58,10 @@ function powerOfNumbers(num, exp) {
 //Task6
 
 function getParagraphUnderlined() {
-    let paragUnderlined = document.querySelectorAll('.task6 p');
+    let getTag = document.getElementById('tag').value;
+    let paragUnderlined = document.getElementsByTagName(getTag);
     for (let i = 0; i < paragUnderlined.length; i++) {
-        paragUnderlined[i].style.textDecoration = 'underline overline';
+        paragUnderlined[i].style.textDecoration = 'underline';
     }
 }
 getParagraphUnderlined()
@@ -80,15 +81,13 @@ getAgeFromClick();
 
 //Task9
 
-let arr = [1, 2, 3, 4, 5];
+
 function calcArrLength(array) {
-    if (arr) {
-        return arr.length
-    } else {
-        return 'Error'
-    }
-    ;
+    let arrayNumber = array.length;
+    return arrayNumber;
+    console.log(arrayNumber);
 }
+let arr = [1, 2, 3, 4, 5];
 let result = calcArrLength(arr);
 document.getElementById('enterArrLength').innerHTML = result;
 
